@@ -22,7 +22,7 @@ def is_interleave_recursive(s, x, y, x_orig, y_orig):
         return is_interleave_recursive(s[1:], x, y[1:], x_orig, y_orig)
 """
 
-
+# dynamic programming solution
 def is_interleave(s, x, y):
     # too short to determine
     if len(x) + len(y) > len(s):
